@@ -8,7 +8,7 @@ export function FormPanel(){
     const handlePersonalChange = (key, value) => {
         dispatch({ 
             type: 'UPDATE_PERSONAL', 
-            payload: { key: 'fullName', value: e.target.value } 
+            payload: { key, value } 
         });
     };
 
