@@ -1,9 +1,8 @@
  import React from "react";
 
-function FormPanel(){
+export function FormPanel(){
     return (
         <div>FormPanel</div>
     );
  }
 
-export default FormPanel;

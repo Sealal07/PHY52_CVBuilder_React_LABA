@@ -1,9 +1,8 @@
 import React from "react";
  
-function PreviewPanel(){
+export function PreviewPanel(){
      return (
          <div>PreviewPanel</div>
      );
 }
  
-export default PreviewPanel;
