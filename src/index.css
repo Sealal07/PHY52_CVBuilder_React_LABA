@@ -6,3 +6,216 @@
   --split: #e8d5b7;
   --card: #fffbf0;
 }
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5e6c8;
+  color: #3d2817;
+  min-height: 100vh;
+}
+/* ОБЩИЙ КОНТЕЙНЕР */
+.app-container{
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 24px;
+}
+.app-header{
+  text-align: center;
+  margin-bottom: 32px;
+  padding: 24px;
+  background: linear-gradient(95deg, var(--acent)0%, var(--darkText) 100% );
+  color: var(--background);
+  border-radius: 16px;
+  box-shadow: 0 4px 16px  rgba(114, 47, 55, 0.3);
+}
+
+.app-header h1{
+  font-size: 36px;
+  margin-bottom: 8px;
+}
+.app-header p{
+  opacity: 0.9;
+  font-size: 15px;
+}
+/* СЕТКА */
+.app-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+/* ЛЕВАЯ ПАНЕЛЬ - ФОРМА ВВОДА */
+
+.form-panel{
+  background: var(--card);
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow:  0 4px 20px rgba(114, 47, 55, 0.1);
+  border: 1px solid var(--split);
+}
+.form-panel h2{
+  color: var(--acent);
+  font-size: 24px;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--background);
+}
+
+.form-section{
+  margin-bottom: 28px;
+  padding-bottom: 20px;
+  border-bottom: 1px dashed #e8d5b7;
+}
+
+.form-section h3{
+  color: var(--darkText);
+  font-size: 18px;
+  margin-bottom: 14px;
+}
+.form-group{
+  margin-bottom: 14px;
+}
+
+.form-group label{
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #6b4423;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.form-group input, .form-group textarea{
+  width: 100%;
+  padding: 10px 14px;
+  border: 2px solid var(--split);
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: inherit;
+  background: var(--card);
+  color: #3d2817;
+  transition: all 0.2s ease;
+}
+.form-group input:focus, .form-group textarea:focus{
+  outline: none;
+  border-color: var(--acent);
+  background: var(--background);
+  box-shadow: 0 0 0 3px rgba(114, 47, 55, 0.1);
+}
+
+.form-group textarea{
+  resize: vertical;
+  min-height: 60px;
+}
+
+.exp-item, .edu-item{
+  background: var(--background);
+  border: 1px solid var(--split);
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 12px;
+  position: relative;
+}
+.btn-add{
+  width: 100%;
+  padding: 12px;
+  background: var(--background);
+  color: var(--acent);
+  border: 2px dashed var(--acent);
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.btn-add:hover{
+  background: var(--acent);
+  color: var(--background);
+  border-style: solid;
+}
+
+.btn-remove{
+  background: transparent;
+  color: var(--acent);
+  border: 1px solid var(--acent);
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: all 0.2s ease;
+}
+
+.btn-remove:hover{
+  background: var(--acent);
+  color: var(--background);
+}
+
+/* ПРАВАЯ ПАНЕЛЬ ПРЕВЬЮ */
+
+.preview-panel{
+  position: sticky;
+  top: 24px;
+}
+.preview-controls{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding: 12px 16px;
+  background: var(--card);
+  flex-wrap: wrap;
+  gap: 12px;
+  border-radius: 12px;
+  border: 1px solid var(--split);
+}
+
+.preview-switcher{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #6b4423;
+}
+
+.preview-switcher button{
+  padding: 6px 14px;
+  background: #f5e6c8;
+  border: 1px solid var(--split);
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 13px;
+  color: var(--darkText);
+  transition: all 0.2s ease;
+}
+
+.preview-switcher button.active{
+  background: var(--acent);
+  color: var(--background);
+  border-color: var(--acent);
+}
+.preview-switcher button:hover:not(.active){
+  background: var(--background);
+}
+
+.btn-print{
+  padding: 8px 18px;
+  background: var(--acent);
+  color: var(--background);
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.btn-print:hover{
+  background: var(--acent);
+  transform: translateY(-1px);
+}

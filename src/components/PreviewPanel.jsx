@@ -101,6 +101,7 @@ export function PreviewPanel(){
                     boxShadow: '0 8px 24px rgba(114, 47, 55, 0.15)',
                     borderRadius: '16px',
                 },
+                
                 header: {
                     background: '#722f37',
                     color: '#fdf6c5',

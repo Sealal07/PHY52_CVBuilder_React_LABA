@@ -12,8 +12,9 @@ export function FormPanel(){
         });
     };
 
+
     return (
-        <div>
+        <div className="form-panel">
             <h2>Заполните данные</h2>
             {/* Личная информация */}
         <section className="form-section">

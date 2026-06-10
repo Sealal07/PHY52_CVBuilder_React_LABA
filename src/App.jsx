@@ -3,6 +3,7 @@ import { CVProvider } from './context/CVContext';
 import { FormPanel } from './components/FormPanel';
 import { PreviewPanel } from './components/PreviewPanel';
 
+
 function App(){
   return (
     <CVProvider>
